@@ -1,0 +1,221 @@
+)login:
+
+Login API  FOR Admin
+http://127.0.0.1:8000/api/login
+
+Request Headers
+Cache-Control
+no-cache
+Postman-Token
+<calculated when request is sent>
+Content-Length
+0
+Host
+<calculated when request is sent>
+User-Agent
+PostmanRuntime/7.56.3
+Accept
+*/*
+Accept-Encoding
+gzip, deflate, br
+Connection
+keep-alive
+content-type
+application/json
+accept
+application/json
+Query Params
+email
+admin@example.com
+password:
+password
+
+2)gps-locations :
+http://127.0.0.1:8000/api/locations
+
+Authorization
+Bearer 6|bUePZRsNW7yzvh9Vgozm5sttcUC9fd0hMMs04icm450ac86b
+
+Cache-Control
+no-cache
+
+Postman-Token
+<calculated when request is sent>
+
+Content-Type
+application/json
+
+Content-Length
+<calculated when request is sent>
+
+Host
+<calculated when request is sent>
+
+User-Agent
+PostmanRuntime/7.56.3
+
+Accept
+*/*
+
+Accept-Encoding
+gzip, deflate, br
+
+Connection
+keep-alive
+
+content-type
+application/json
+
+accept
+application/json
+
+Body
+raw (json)
+json
+{
+  "latitude": 21.2514,
+  "longitude": 81.6296,
+  "accuracy": 12.5,
+  "recorded_at": "2026-11-24T00:49:16.576Z"
+}
+
+
+
+3) Report user wise:
+http://127.0.0.1:8000/api/reports/users/2?date=2026-11-23
+Request Headers
+Authorization
+Bearer 6|bUePZRsNW7yzvh9Vgozm5sttcUC9fd0hMMs04icm450ac86b
+
+Cache-Control
+no-cache
+
+Postman-Token
+<calculated when request is sent>
+
+Host
+<calculated when request is sent>
+
+User-Agent
+PostmanRuntime/7.56.3
+
+Accept
+*/*
+
+Accept-Encoding
+gzip, deflate, br
+
+Connection
+keep-alive
+
+Query Params
+date
+2026-11-23
+
+Body
+raw (json)
+
+4)summary report:
+http://127.0.0.1:8000/api/reports/summary?date=2026-11-23
+Request Headers
+Authorization
+Bearer 6|bUePZRsNW7yzvh9Vgozm5sttcUC9fd0hMMs04icm450ac86b
+
+Cache-Control
+no-cache
+
+Postman-Token
+<calculated when request is sent>
+
+Host
+<calculated when request is sent>
+
+User-Agent
+PostmanRuntime/7.56.3
+
+Accept
+*/*
+
+Accept-Encoding
+gzip, deflate, br
+
+Connection
+keep-alive
+
+Query Params
+date
+2026-11-23
+
+Body
+raw (json)
+
+4)csv eport report
+http://127.0.0.1:8000/api
+/reports/export?date=2026-11-23
+
+
+Request Headers
+Authorization
+Bearer 6|bUePZRsNW7yzvh9Vgozm5sttcUC9fd0hMMs04icm450ac86b
+
+Cache-Control
+no-cache
+
+Postman-Token
+<calculated when request is sent>
+
+Host
+<calculated when request is sent>
+
+User-Agent
+PostmanRuntime/7.56.3
+
+Accept
+*/*
+
+Accept-Encoding
+gzip, deflate, br
+
+Connection
+keep-alive
+
+Query Params
+date
+2026-11-23
+
+Body
+raw (json)
+5)map-based report:
+reports/map-based-route/{user}
+like: http://127.0.0.1:8000/api/reports/map-based-route/2?date=2026-11-23
+
+Authorization
+Bearer 6|bUePZRsNW7yzvh9Vgozm5sttcUC9fd0hMMs04icm450ac86b
+
+Cache-Control
+no-cache
+
+Postman-Token
+<calculated when request is sent>
+
+Host
+<calculated when request is sent>
+
+User-Agent
+PostmanRuntime/7.56.3
+
+Accept
+*/*
+
+Accept-Encoding
+gzip, deflate, br
+
+Connection
+keep-alive
+
+Query Params
+date
+2026-11-23
+
+Body
+raw (json)
